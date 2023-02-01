@@ -18,6 +18,7 @@
     "@typescript-eslint/eslint-plugin": "^5.49.0"
   },
   "scripts": {
-    "test": "jest"
+    "tsc": "tsc",
+    "test": "npm run tsc -- --noEmit && jest"
   }
 }
