@@ -4,7 +4,7 @@ import Customer from "../../../domain/entity/customer";
 import CustomerModel from "./customer.model";
 
 export default class CustomerRepository implements CustomerInterfaceRepository {
-  async create(entity: Customer): Promise<void> {
+  async create(entity: Customer) {
     await CustomerModel.create({
       id: entity.id,
       name: entity.name,
@@ -17,7 +17,7 @@ export default class CustomerRepository implements CustomerInterfaceRepository {
     });
   }
 
-  async update(entity: Customer): Promise<void> {
+  async update(entity: Customer) {
     await CustomerModel.update(
       {
         name: entity.name,
@@ -36,7 +36,7 @@ export default class CustomerRepository implements CustomerInterfaceRepository {
     );
   }
 
-  async findById(id: string): Promise<Customer> {
+  async findById(id: string) {
     let customerModel: CustomerModel;
     try {
       customerModel = await CustomerModel.findOne({
@@ -60,7 +60,7 @@ export default class CustomerRepository implements CustomerInterfaceRepository {
     return customer;
   }
 
-  async findAll(): Promise<Customer[]> {
+  async findAll() {
     const customerModels = await CustomerModel.findAll();
 
     const customers = customerModels.map((customerModels) => {
