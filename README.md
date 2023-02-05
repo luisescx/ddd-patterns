@@ -2,7 +2,7 @@
 
 The goal of this project is to conduct a thorough study of Domain-Driven Design (DDD) patterns, with a focus on implementing these patterns in a practical and efficient manner.
 
-### Technologies Used
+### 💻 Technologies Used
 
 - Node.js
 - TypeScript
@@ -11,11 +11,11 @@ The goal of this project is to conduct a thorough study of Domain-Driven Design 
 - SWC
 - SQLite
 
-### Implementation of DDD Classes
+### 📂 Implementation of DDD Classes
 
 One of the key features of this project is the implementation of DDD classes. This helps to structure files, folders, and ensure that the ubiquitous language of the project is consistent and coherent.
 
-### Unit Testing
+### ✅ Unit Testing
 
 To ensure the stability and reliability of the project, unit tests are implemented using Jest. These tests provide confidence in the code, allowing for easy maintenance and refactoring in the future.
 
